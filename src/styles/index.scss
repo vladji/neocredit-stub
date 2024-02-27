@@ -1,0 +1,50 @@
+@import 'reset';
+@import 'variables';
+@import 'mixins';
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: var(--light-color);
+  font-family: Arial, sans-serif;
+  @include font-body;
+  color: var(--black-color);
+  overflow-x: hidden;
+}
+
+main {
+  flex-grow: 1;
+  padding-bottom: var(--section-padding-block);
+}
+
+h1,
+h2 {
+  @include font-h1;
+}
+
+h3 {
+  @include font-h3;
+}
+
+button {
+  @media(min-width: #{$breakpoint-desktop}) {
+    cursor: pointer;
+  }
+}
+
+.section {
+  padding-top: var(--size-huge);
+  padding-inline: var(--size-standard);
+}
+
+.container {
+  max-width: var(--content-width);
+  margin-inline: auto;
+}
