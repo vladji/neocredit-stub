@@ -1,23 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#ffffff" />
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon.svg" />
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon.svg" />
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5" />
-    <meta name="msapplication-TileColor" content="#ffffff" />
-    <meta
-      name="description"
-      content="Деньги в кредит, получить деньги онлайн. Первый 7 дней без процентов. Проценты по кредиту без регистрации"
-    />
-    <title>NeoCredit</title>
-  </head>
-  <body>
-    <div id="root"></div>
-  </body>
+<head>
+  <meta charset="utf-8" />
+  <link rel="icon" href="%PUBLIC_URL%/favicon.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#ffffff" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon.svg" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon.svg" />
+  <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5" />
+  <meta name="msapplication-TileColor" content="#ffffff" />
+  <meta
+    name="description"
+    content="Деньги в кредит, получить деньги онлайн. Первый 7 дней без процентов. Проценты по кредиту без регистрации"
+  />
+  <title>NeoCredit</title>
+</head>
+<body>
+<!-- Begin Verbox {literal} -->
+<script>
+  (function () {
+    (function c(d, w, m, i) {
+      window.supportAPIMethod = m;
+      var s = d.createElement('script');
+      s.id = 'supportScript';
+      var id = 'f9d87f07fc47fa8ca40feed4b9f9de1d';
+      s.src = (!i ? 'https://admin.verbox.ru/support/support.js' : 'https://static.site-chat.me/support/support.int.js') + '?h=' + id;
+      s.onerror = i ? undefined : function () {
+        c(d, w, m, true);
+      };
+      w[m] = w[m] ? w[m] : function () {
+        (w[m].q = w[m].q ? w[m].q : []).push(arguments);
+      };
+      (d.head ? d.head : d.body).appendChild(s);
+    })(document, window, 'Verbox');
+  })();
+</script>
+<!-- End Verbox -->
+<div id="root"></div>
+</body>
 </html>
