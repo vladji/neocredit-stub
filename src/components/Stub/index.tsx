@@ -11,12 +11,12 @@ export const Stub = () => {
           На данный момент наш сайт находится на техническом обслуживании для улучшения качества предоставляемых услуг.
           Приносим извинения за временные неудобства.
         </p>
-        <h2 className={styles.phone}>
+        <a className={styles.phone} href="tel:+77089128007">
           +7 708 912-80-07
-        </h2>
+        </a>
       </div>
       <div className={styles.imageWrapper}>
-        <img src="./stub-image.png" alt='image' />
+        <img src="./stub-image.png" alt="image" />
       </div>
     </div>
   );

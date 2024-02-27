@@ -9,13 +9,15 @@ export const Header = () => {
           <a href="/">
             <LogoIcon />
           </a>
-          <div className={styles.callCenter}>
-            <span className={styles.title}>Call center:</span>
-            <span className={styles.value}>
+        </div>
+        <div className={styles.callCenter}>
+          <span className={styles.title}>Call center:</span>
+          <a href="tel:+77089128007">
+                <span className={styles.value}>
                 <span className={styles.mark}>+7 708 </span>
                 912 80 07
               </span>
-          </div>
+          </a>
         </div>
       </div>
     </header>

@@ -6,9 +6,9 @@
 }
 
 .headerContainer {
-  position: relative;
   display: flex;
   align-items: center;
+  justify-content: space-between;
   height: var(--header-height);
 }
 
@@ -19,26 +19,20 @@
 }
 
 .callCenter {
-  display: none;
+  display: flex;
+  gap: var(--size-mini);
+  align-items: center;
 
-  @media(min-width: #{$breakpoint-desktop}) {
-    display: flex;
-    flex-direction: column;
-    gap: var(--size-micro);
-    align-items: center;
-    width: 172px;
+  .title {
+    @include font-body-small;
+  }
 
-    .title {
-      @include font-body-small;
-    }
+  .value {
+    font-weight: 700;
+  }
 
-    .value {
-      font-weight: 700;
-    }
-
-    .mark {
-      font-weight: initial;
-      color: var(--gray-color);
-    }
+  .mark {
+    font-weight: initial;
+    color: var(--gray-color);
   }
 }
