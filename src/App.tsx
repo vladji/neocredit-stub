@@ -1,10 +1,10 @@
 import { Layout } from './components/Layout';
-
+import { Stub } from './components/Stub';
 
 function App() {
   return (
     <Layout>
-      <h1>text</h1>
+      <Stub />
     </Layout>
   );
 }

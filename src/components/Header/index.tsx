@@ -12,8 +12,8 @@ export const Header = () => {
           <div className={styles.callCenter}>
             <span className={styles.title}>Call center:</span>
             <span className={styles.value}>
-                <span className={styles.mark}>+7 700 </span>
-                750 15 00
+                <span className={styles.mark}>+7 708 </span>
+                912 80 07
               </span>
           </div>
         </div>
