@@ -5,7 +5,7 @@ export const Header = () => {
   return (
     <header className={styles.headerWrapper}>
       <div className={`container ${styles.headerContainer}`}>
-        <div className={styles.left}>
+        <div className={styles.logoWrapper}>
           <a href="/">
             <LogoIcon />
           </a>

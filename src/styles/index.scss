@@ -20,8 +20,9 @@
 }
 
 main {
+  display: flex;
+  flex-direction: column;
   flex-grow: 1;
-  padding-bottom: var(--section-padding-block);
 }
 
 h1,
@@ -41,13 +42,28 @@ button {
 
 .section {
   display: flex;
-  flex-grow: 1;
   align-items: center;
-  padding-block: var(--size-huge);
+  padding-top: var(--size-huge);
   padding-inline: var(--size-standard);
 }
 
 .container {
   max-width: var(--content-width);
   margin-inline: auto;
+}
+
+.desktopDisplay {
+  display: none;
+
+  @media(min-width: #{$breakpoint-desktop}) {
+    display: flex;
+  }
+}
+
+.mobileDisplay {
+  display: flex;
+
+  @media(min-width: #{$breakpoint-desktop}) {
+    display: none;
+  }
 }
