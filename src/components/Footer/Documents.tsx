@@ -1,6 +1,7 @@
 import { FC, useEffect, useState } from 'react';
 import { Spinner } from '../UI/Spinner';
 import { Modal } from '../UI/Modal';
+import styles from './styles.module.scss';
 
 interface Props {
   visible: boolean;
@@ -14,13 +15,13 @@ export const Documents: FC<Props> = ({ visible, onClose }) => {
     if (visible) {
       setTimeout(() => {
         setShowSpinner(false);
-      }, 3000);
+      }, 2000);
     }
     return () => setShowSpinner(true);
   }, [visible]);
 
   return (
-    <Modal visible={visible} onClose={onClose}>
+    <Modal visible={visible} onClose={onClose} cardClassName={styles.documentsCard}>
       <>
         {showSpinner && <Spinner />}
         {!showSpinner && <p>Ой... что-то пошло не так</p>}

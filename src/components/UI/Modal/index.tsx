@@ -8,11 +8,12 @@ interface Props {
   visible: boolean;
   onClose: () => void;
   children: ReactNode;
+  cardClassName?: string;
 }
 
 const MODAL_ID = 'modal-wrapper';
 
-export const Modal: FC<Props> = ({ visible, onClose, children }) => {
+export const Modal: FC<Props> = ({ visible, onClose, children, cardClassName }) => {
   useEffect(() => {
     if (visible) {
       document.body.style.overflow = 'hidden';
@@ -33,7 +34,7 @@ export const Modal: FC<Props> = ({ visible, onClose, children }) => {
     <>
       {visible && createPortal(
         <div id={MODAL_ID} onClick={handleClose} className={styles.modalWrapper}>
-          <CardBlank className={styles.card}>
+          <CardBlank className={cardClassName}>
             <button className={styles.closeButton} onClick={onClose}>
               <CrossIcon />
             </button>
