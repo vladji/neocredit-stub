@@ -1,0 +1,12 @@
+@import '../../../styles/mixins.scss';
+
+.cardBlank {
+  padding: var(--size-standard);
+  border-radius: 20px;
+  background-color: var(--light-color);
+  box-shadow: var(--component-shadow);
+
+  @media(min-width: #{$breakpoint-desktop}) {
+    padding: var(--size-standard);
+  }
+}
