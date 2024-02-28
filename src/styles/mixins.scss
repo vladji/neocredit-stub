@@ -39,13 +39,13 @@
 }
 
 @mixin font-h3-desktop {
-  font-size: 32px;
+  font-size: 20px;
   font-weight: 700;
-  line-height: 40px;
+  line-height: 24px;
 }
 
 @mixin font-h3-mobile {
-  font-size: 22px;
+  font-size: 16px;
   font-weight: 700;
   line-height: 24px;
 }
@@ -56,10 +56,4 @@
   @media(min-width: #{$breakpoint-desktop}) {
     @include font-h3-desktop;
   }
-}
-
-@mixin flex-center-center {
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }

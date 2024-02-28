@@ -1,23 +1,20 @@
 import styles from './styles.module.scss';
+import { CardBlank } from '../UI/CardBlank';
 
 export const Stub = () => {
   return (
-    <div className={styles.wrapper}>
-      <div className={styles.textWrapper}>
-        <h1 className={styles.title}>
-          Технические работы
-        </h1>
-        <p>
-          На данный момент наш сайт находится на техническом обслуживании для улучшения качества предоставляемых услуг.
-          Приносим извинения за временные неудобства.
-        </p>
-        <a className={styles.phone} href="tel:+77089128007">
-          +7 708 912-80-07
-        </a>
+    <section className={`section ${styles.section}`}>
+      <div className={`container ${styles.container}`}>
+        <CardBlank className={styles.infoCard}>
+          <h3>Уважаемые пользователи</h3>
+          <p>В связи с техническими работами, в определенный период времени возможны
+            некоторые временные ограничения в
+            доступе к функциям сайта.
+            Благодарим за ваше понимание и терпение.
+          </p>
+          <a className={styles.cardLink} href="tel:+77089128007">+7 708 912 80 07</a>
+        </CardBlank>
       </div>
-      <div className={styles.imageWrapper}>
-        <img src="./stub-image.png" alt="image" />
-      </div>
-    </div>
+    </section>
   );
 };
