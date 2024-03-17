@@ -87,6 +87,7 @@
 .footerButton {
   order: 1;
   height: 36px;
+  font-size: 14px;
 
   @media(min-width: #{$breakpoint-desktop}) {
     order: 2

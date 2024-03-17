@@ -41,7 +41,7 @@ export const Footer = () => {
         <div className={`${styles.block} ${styles.bottomBlock}`}>
           <MainButton
             className={styles.footerButton}
-            text="ДОКУМЕНТЫ"
+            text="Документы"
             handler={showDocumentsHandler}
           />
           <div className={styles.info}>
