@@ -30,6 +30,23 @@
   gap: var(--size-standard);
 }
 
+.phoneWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: var(--size-mini);
+  align-items: center;
+}
+
+.phoneInner {
+  display: flex;
+  gap: var(--size-medium);
+  align-items: center;
+
+  .image {
+    width: var(--logo-watsapp-width);
+  }
+}
+
 .cardLink {
   @include font-h3;
 }

@@ -33,6 +33,10 @@
   display: flex;
   gap: var(--size-standard);
   align-items: center;
+
+  .image {
+    width: var(--logo-watsapp-width);
+  }
 }
 
 .contacts {

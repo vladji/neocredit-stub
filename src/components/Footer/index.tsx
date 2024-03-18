@@ -1,4 +1,3 @@
-import { PhoneIcon } from '../../icons/PhoneIcon';
 import { EmailIcon } from '../../icons/EmailIcon';
 import { VisaIcon } from '../../icons/VisaIcon';
 import { MastercardIcon } from '../../icons/MastercardIcon';
@@ -21,8 +20,8 @@ export const Footer = () => {
           <div>
             <div className={styles.contacts}>
               <div className={`${styles.row}`}>
-                <PhoneIcon />
-                <a href="tel:+77089128007">+7 708 912 80 07</a>
+                <img className={styles.image} src="/images/whatsapp-logo.png" alt="WatsApp" />
+                <a href="tel:+77017576387">+7 701 757 63 87</a>
               </div>
               <div className={`${styles.row}`}>
                 <EmailIcon />

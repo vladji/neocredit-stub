@@ -11,13 +11,19 @@ export const Header = () => {
           </a>
         </div>
         <div className={styles.callCenter}>
-          <span className={styles.title}>Call center:</span>
-          <a href="tel:+77089128007">
+          <div className={styles.titleWrapper}>
+            <img className={styles.image} src="/images/whatsapp-logo.png" alt="WatsApp" />
+            <span>Только сообщения WatsApp</span>
+          </div>
+          <div className={styles.phoneWrapper}>
+            <img className={`${styles.image} mobileDisplay`} src="/images/whatsapp-logo.png" alt="WatsApp" />
+            <a href="tel:++77017576387">
                 <span className={styles.value}>
-                <span className={styles.mark}>+7 708 </span>
-                912 80 07
-              </span>
-          </a>
+                <span className={styles.mark}>+7 701 </span>
+                757 63 87
+                </span>
+            </a>
+          </div>
         </div>
       </div>
     </header>

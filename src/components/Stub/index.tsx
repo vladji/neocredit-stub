@@ -14,7 +14,13 @@ export const Stub = () => {
               доступе к функциям сайта.
               Благодарим за ваше понимание и терпение.
             </p>
-            <a className={styles.cardLink} href="tel:+77089128007">+7 708 912 80 07</a>
+            <div className={styles.phoneWrapper}>
+              <div className={styles.phoneInner}>
+                <img className={styles.image} src="/images/whatsapp-logo.png" alt="WatsApp" />
+                <a className={styles.cardLink} href="tel:++770175763877">+7 701 757 63 87</a>
+              </div>
+              <span>Только сообщения WatsApp</span>
+            </div>
           </CardBlank>
           <MakePayment />
         </div>

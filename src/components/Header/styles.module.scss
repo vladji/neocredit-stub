@@ -38,6 +38,26 @@
     order: 1;
   }
 
+  .titleWrapper {
+    display: none;
+
+    @media(min-width: #{$breakpoint-desktop}) {
+      display: flex;
+      gap: var(--size-mini);
+      align-items: center;
+    }
+  }
+
+  .phoneWrapper {
+    display: flex;
+    gap: var(--size-mini);
+    align-items: center;
+  }
+
+  .image {
+    width: var(--logo-watsapp-width);
+  }
+
   .title {
     @include font-body-small;
   }
