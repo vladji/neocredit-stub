@@ -16,10 +16,10 @@ export const Stub = () => {
             </p>
             <div className={styles.phoneWrapper}>
               <div className={styles.phoneInner}>
-                <img className={styles.image} src="/images/whatsapp-logo.png" alt="WatsApp" />
+                <img className={styles.image} src="/images/whatsapp-logo.png" alt="WhatsApp" />
                 <a className={styles.cardLink} href="tel:++770175763877">+7 701 757 63 87</a>
               </div>
-              <span>Только сообщения WatsApp</span>
+              <span>Только сообщения WhatsApp</span>
             </div>
           </CardBlank>
           <MakePayment />

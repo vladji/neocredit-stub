@@ -20,7 +20,7 @@ export const Footer = () => {
           <div>
             <div className={styles.contacts}>
               <div className={`${styles.row}`}>
-                <img className={styles.image} src="/images/whatsapp-logo.png" alt="WatsApp" />
+                <img className={styles.image} src="/images/whatsapp-logo.png" alt="WhatsApp" />
                 <a href="tel:+77017576387">+7 701 757 63 87</a>
               </div>
               <div className={`${styles.row}`}>
