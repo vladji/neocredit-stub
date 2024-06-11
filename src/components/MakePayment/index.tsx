@@ -5,7 +5,7 @@ export const MakePayment = () => {
   // const [showModal, setShowModal] = useState<boolean>(false);
 
   const makePayment = async () => {
-    document.location.href = 'https://customer.freedompay.money/links?slug=H4hK2';
+    document.location.href = 'https://customer.freedompay.kz/links?slug=H4hK2';
   };
 
   return (
