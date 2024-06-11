@@ -12,15 +12,15 @@ export const Header = () => {
         </div>
         <div className={styles.callCenter}>
           <div className={styles.titleWrapper}>
-            <img className={styles.image} src="/images/whatsapp-logo.png" alt="WhatsApp" />
-            <span>Только сообщения WhatsApp</span>
+            {/*<img className={styles.image} src="/images/whatsapp-logo.png" alt="WhatsApp" />*/}
+            <span>Call center</span>
           </div>
           <div className={styles.phoneWrapper}>
-            <img className={`${styles.image} mobileDisplay`} src="/images/whatsapp-logo.png" alt="WhatsApp" />
-            <a href="tel:++77017576387">
+            {/*<img className={`${styles.image} mobileDisplay`} src="/images/whatsapp-logo.png" alt="WhatsApp" />*/}
+            <a href="tel:+77089128007">
                 <span className={styles.value}>
-                <span className={styles.mark}>+7 701 </span>
-                757 63 87
+                <span className={styles.mark}>+7 708 </span>
+                912 80 07
                 </span>
             </a>
           </div>
