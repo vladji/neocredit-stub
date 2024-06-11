@@ -42,7 +42,11 @@
   gap: var(--size-medium);
   align-items: center;
 
-  .image {
+  .phoneImage {
+    width: 20px;
+  }
+
+  .whatsappImage {
     width: var(--logo-watsapp-width);
   }
 }

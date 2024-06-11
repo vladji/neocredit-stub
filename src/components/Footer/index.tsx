@@ -24,6 +24,10 @@ export const Footer = () => {
                 <a href="tel:+77089128007">+7 708 912 80 07</a>
               </div>
               <div className={`${styles.row}`}>
+                <img className={styles.image} src="/images/whatsapp-logo.png" alt="whatsapp" />
+                <a href="https://wa.me/77017576387">+7 701 757 63 87</a>
+              </div>
+              <div className={`${styles.row}`}>
                 <EmailIcon />
                 <a href="mailto:info@neocredit.kz">info@neocredit.kz</a>
               </div>
